@@ -100,6 +100,8 @@ export class Props {
    * for disabling focus on image center if user doesn't want it
    */
   public enableCenterFocus?: boolean = true;
+  
+  public getScale?: (scale: number) => void = () => {};
 
   /**
    * minimum zoom scale
