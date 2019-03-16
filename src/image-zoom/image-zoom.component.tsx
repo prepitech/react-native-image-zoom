@@ -401,7 +401,9 @@ export default class ImageViewer extends React.Component<Props, State> {
               // 开始缩放
               this.scale = zoom;
               this.animatedScale.setValue(this.scale);
-              this.props.getScale(this.scale);
+              if(this.props.getScale) {
+                this.props.getScale(this.scale);
+              }
 
               // 图片要慢慢往两个手指的中心点移动
               // 缩放 diff
