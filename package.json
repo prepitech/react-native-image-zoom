@@ -5,7 +5,6 @@
   "main": "built/index.js",
   "types": "built/index.d.ts",
   "scripts": {
-    "prepare": "rm -rf built && tsc",
     "start": "tsc -w --outDir demo/built"
   },
   "repository": {
@@ -18,15 +17,15 @@
   "author": "ascoders",
   "license": "ISC",
   "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
+    "react": "^16.x",
+    "react-native": "^0.56.x"
   },
   "devDependencies": {
-    "@types/react": "*",
-    "@types/react-native": "*",
+    "@types/react": "^16.x",
+    "@types/react-native": "^0.56.x",
     "ascoders-tslint-config": "^1.0.2",
-    "react": "*",
-    "react-native": "*",
+    "react": "^16.x",
+    "react-native": "^0.56.x",
     "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.13.0",
     "typescript": "^2.9.2"
